@@ -16,7 +16,7 @@ async def main():
     async with bot:
         await bot.add_cog(help_cog(bot))
         await bot.add_cog(music_cog(bot))
-        await bot.start(os.getenv['TOKEN'])
+        await bot.start('TOKEN')
 
 asyncio.run(main())
 
